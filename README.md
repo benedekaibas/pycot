@@ -1,18 +1,18 @@
 # pycot
 
-## Code Optimization Techniques - COT
+## 🚀 Code Optimization Techniques - COT
 Experiment with different optimization techniques in Python, such as using list comprehensions vs. traditional loops, optimizing function calls, or leveraging parallel processing with libraries like multiprocessing or concurrent.futures.
 
 
-### Function calls experiment 
+### 🧪 Function Calls - experiment 
 
 * File name: `function_calls.py`
 
-#### Briefly Introduction to the experiment
+#### 📝 Briefly Introduction to the experiment
 
 This experiment is to compare writing code directly in the script and using a method of a class. The main focus is on the execution time between the two methods of writing python code. As you see in the result of the experiment using oop in python is a better way of writing code than just writing scripts without ordering them into classes or functions.
 
-#### Displaying the result of the experiment
+#### 🔎 Displaying the result of the experiment
 
 * Results:
 
@@ -35,4 +35,4 @@ Function method
 Execution time: 0.014419317994907033 seconds
 ```
 
-#### Explaining the result of the experiment
+#### 💻 Explaining the result of the experiment

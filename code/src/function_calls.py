@@ -3,7 +3,7 @@
 import timeit
 from typing import List
 
-myList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] * 1000
+myList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] * 10000
 oddList = []
 evenList = []
 
@@ -23,7 +23,7 @@ class OPTFunction:
     """Class for doing research in optimizing function calls."""
 
     def optimized_function(self, oddList: List, evenList: List) -> str:
-        myList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] * 1000
+        myList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] * 10000
 
         start_time = timeit.default_timer()
 
@@ -41,4 +41,6 @@ if __name__ == "__main__":
     opt_function = OPTFunction()
     oddList = []
     evenList = []
+    print("")
+    print("Function method")
     print(opt_function.optimized_function(oddList, evenList))

@@ -2,6 +2,9 @@
 
 import timeit
 from typing import List
+from rich.console import Console
+
+console = Console()
 
 myList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] * 10000
 oddList = []
@@ -17,7 +20,8 @@ for i in myList:
 
 end_time = timeit.default_timer()
 
-print(f"Execution time: {end_time - start_time} seconds")
+console.print("")
+console.print(f"Execution time: {end_time - start_time} seconds")
 
 class OPTFunction:
     """Class for doing research in optimizing function calls."""
@@ -41,6 +45,6 @@ if __name__ == "__main__":
     opt_function = OPTFunction()
     oddList = []
     evenList = []
-    print("")
-    print("Function method")
-    print(opt_function.optimized_function(oddList, evenList))
+    console.print("")
+    console.print("Function method")
+    console.print(opt_function.optimized_function(oddList, evenList))

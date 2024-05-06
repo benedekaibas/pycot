@@ -1,5 +1,6 @@
 """Leveraging parallel processing with python libraries."""
 
+import timeit
 from multiprocessing import Pool
 from rich.console import Console
 
@@ -13,6 +14,10 @@ def pool_third_power(x: int) -> int:
 
 
 if __name__ == "__main__":
+
+    start_time = timeit.default_timer()
     with Pool(5) as p:
        console.print(p.map(pool_second_power, [1, 2, 3, 4, 5, 6, 7, 8, 9]))
        console.print(p.map(pool_third_power, [1, 2, 3, 4, 5, 6, 7, 8, 9]))
+    end_time = timeit.default_timer()
+    console.print(f"Execution time: {end_time - start_time} seconds.")

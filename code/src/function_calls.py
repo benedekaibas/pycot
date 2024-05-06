@@ -20,6 +20,7 @@ for i in myList:
 
 end_time = timeit.default_timer()
 
+console.print("Directly scripted code method")
 console.print("")
 console.print(f"Execution time: {end_time - start_time} seconds")
 
@@ -47,4 +48,5 @@ if __name__ == "__main__":
     evenList = []
     console.print("")
     console.print("Function method")
+    console.print("")
     console.print(opt_function.optimized_function(oddList, evenList))

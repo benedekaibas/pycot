@@ -50,3 +50,6 @@ if __name__ == "__main__":
     console.print("Function method")
     console.print("")
     console.print(opt_function.optimized_function(oddList, evenList))
+
+
+

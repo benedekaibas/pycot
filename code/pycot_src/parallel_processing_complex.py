@@ -22,4 +22,3 @@ class LPPComplex:
 if __name__ == "__main__":
     lpp_complex = LPPComplex()
     console.print(lpp_complex.pool_size())
-

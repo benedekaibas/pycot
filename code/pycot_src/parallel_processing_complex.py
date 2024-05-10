@@ -12,6 +12,14 @@ class LPPComplex:
     def __init__(self) -> None:
         pass
 
-    def pool_size(self, pool: list) -> List[int]:
+    def pool_size(self) -> List[int]:
+        """Iterating through the pool sizes."""
+        pool = [1,2,3,4,5]
         for i in pool:
             return i
+
+
+if __name__ == "__main__":
+    lpp_complex = LPPComplex()
+    console.print(lpp_complex.pool_size())
+

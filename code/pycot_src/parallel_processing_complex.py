@@ -4,7 +4,7 @@ import timeit
 from multiprocessing import Pool
 from rich.console import Console
 from typing import List
-
+from parallel_processing_simple import pool_second_power
 
 console = Console()
 
@@ -14,9 +14,10 @@ class LPPComplex:
 
     def pool_size(self) -> List[int]:
         """Iterating through the pool sizes."""
+        #second_power = pool_second_power() # we might use it in a different way
         pool = [1,2,3,4,5]
         for i in pool:
-            return i
+            return Pool(i)
 
 
 if __name__ == "__main__":

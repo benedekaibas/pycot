@@ -4,7 +4,7 @@ import timeit
 from multiprocessing import Pool
 from rich.console import Console
 from typing import List
-from parallel_processing_simple import pool_second_power
+
 
 console = Console()
 

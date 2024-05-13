@@ -22,7 +22,9 @@ class LPPComplex:
     def pool_second_power(self, number: int) -> int:
         """Raising the parameter to its second power."""
         return number ** number
+
     
+
 if __name__ == "__main__":
     lpp_complex = LPPComplex()
     console.print(lpp_complex.pool_size())

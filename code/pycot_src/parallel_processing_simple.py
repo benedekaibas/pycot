@@ -12,6 +12,10 @@ def pool_second_power(x: int) -> int:
 def pool_third_power(x: int) -> int:
     return x*x*x
 
+def set_range():
+    set_of_range = range(0,1000)
+    return set_of_range
+
 
 if __name__ == "__main__":
 

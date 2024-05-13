@@ -15,5 +15,10 @@ console = Console()
 class LPPComplex:
     def __init__(self) -> None:
         pass
+    
+    def pool_size(self):
+        return range(1000)
 
-
+if __name__ == "__main__":
+    lpp_complex =  LPPComplex()
+    console.print(lpp_complex.pool_size())

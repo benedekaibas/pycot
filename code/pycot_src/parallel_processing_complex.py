@@ -15,15 +15,14 @@ class LPPComplex:
     def pool_size(self) -> List[int]:
         """Iterating through the pool sizes."""
         #range of possible pool sizes
-        pool = [1,2,3,4,5]
-        for i in pool:
+        pool_range = range(0,1000)
+        for i in pool_range:
             return Pool(i)
 
     def pool_second_power(self, number: int) -> int:
         """Raising the parameter to its second power."""
         return number ** number
-
-    
+   
 
 if __name__ == "__main__":
     lpp_complex = LPPComplex()

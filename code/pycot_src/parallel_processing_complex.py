@@ -16,8 +16,9 @@ class LPPComplex:
     def __init__(self) -> None:
         pass
     
-    def pool_size(self):
-        return list(range(1000))
+    def cpu_cores(self):
+        """Returning all the cores that laptops could have."""
+        return [2,3,4,5,6,7,8]
 
 if __name__ == "__main__":
     lpp_complex =  LPPComplex()

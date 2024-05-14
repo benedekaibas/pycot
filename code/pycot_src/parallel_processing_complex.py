@@ -5,9 +5,9 @@ from multiprocessing import Pool
 from rich.console import Console
 from typing import List
 
-# TODO: iterate through the possible pool sizes - DONE
-# TODO: create a range that we can perform a doubling experiment to its every values
-# TODO: for each pool size return the result of the iteration with the doubling function
+# iterate through the possible pool sizes - DONE
+# create a range that we can perform a doubling experiment to its every values - DONE
+# for each pool size return the result of the iteration with the doubling function - DONE
 
 
 console = Console()

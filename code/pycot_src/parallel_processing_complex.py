@@ -25,9 +25,8 @@ class LPPComplex:
         cores = self.cpu_cores()
 
         for item in cores:
-            console.print(f"{item} in for {cores} core: {item ** item}")
-
-
+            console.print(f"Core {item} in {cores} result: {item ** item}")
+            
 
 
 

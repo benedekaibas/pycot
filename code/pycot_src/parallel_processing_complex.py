@@ -16,16 +16,32 @@ class LPPComplex:
     def __init__(self) -> None:
         pass
     
+    def set_range(self):
+        return range(1, 1001)
+
     def cpu_cores(self):
         """Returning all the cores that laptops could have."""
         return [2,3,4,5,6,7,8]
     
+    def pool_second_power(self, number: int) -> int:
+        return number ** number
+    
     def experiment(self):
         """Do experiment for every single core and return the experiment"""
         cores = self.cpu_cores()
+        pool_second_power = self.pool_second_power(10)
+        set_range = self.set_range()
 
-        for item in cores:
-            console.print(f"Core {item} in {cores} result: {item ** item}")
+
+        results = []
+        for core in cores:
+            start_time = timeit.default_timer()
+            with Pool(core) as p:
+                result = p.map(pool_second_power, set_range)
+                results.append((core, result))
+            end_time = timeit.default_timer()
+            console.print(f"Execution time with {core} cores: {end_time - start_time} seconds.")
+        return results
             
 
 

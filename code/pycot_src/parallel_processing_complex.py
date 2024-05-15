@@ -9,7 +9,6 @@ from typing import List
 # create a range that we can perform a doubling experiment to its every values - DONE
 # for each pool size return the result of the iteration with the doubling function - DONE
 
-
 console = Console()
 
 class LPPComplex:

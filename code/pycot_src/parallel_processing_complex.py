@@ -8,6 +8,7 @@ from typing import List
 # iterate through the possible pool sizes - DONE
 # create a range that we can perform a doubling experiment to its every values - DONE
 # for each pool size return the result of the iteration with the doubling function - DONE
+# TODO: Instead of using for loop use some of the searching methods, e.g: binary search, recursive search, etc.
 
 console = Console()
 

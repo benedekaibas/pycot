@@ -38,9 +38,16 @@ class LPPComplex:
             console.print(f"Execution time with {core} cores: {end_time - start_time} seconds.")
         return results
     
-    def experiment_binary_search(self): 
+    def experiment_binary_search(self, lst = list, item = int) -> list: 
         """Doing the experiment with binary search, so we can get a better execution time."""
-
+        left, right = 0, len(lst)
+        while right - left > 1:
+            median = (right + left) // 2
+            if item < lst[median]:
+                right = median
+            else:
+                left = median
+        return right > left and lst[left] == item
 
 
 if __name__ == "__main__":

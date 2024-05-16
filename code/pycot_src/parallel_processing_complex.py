@@ -26,7 +26,7 @@ class LPPComplex:
     def pool_second_power(self, number: int) -> int:
         return number ** number
     
-    def experiment(self):
+    def experiment_for_loop(self) -> list:
         """Do experiment for every single core and return the experiment"""
         results = []
         for core in self.cpu_cores():
@@ -37,10 +37,12 @@ class LPPComplex:
             end_time = timeit.default_timer()
             console.print(f"Execution time with {core} cores: {end_time - start_time} seconds.")
         return results
-
+    
+    def experiment_binary_search(self): 
+        """Doing the experiment with binary search, so we can get a better execution time."""
 
 
 
 if __name__ == "__main__":
     lpp_complex =  LPPComplex()
-    console.print(lpp_complex.experiment())
+    console.print(lpp_complex.experiment_for_loop())

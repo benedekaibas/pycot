@@ -16,7 +16,7 @@ class LPPComplex:
         pass
     
     def set_range(self):
-        return range(1, 1001)
+        return list(range(1, 1001))
 
     def cpu_cores(self):
         """Returning all the cores that laptops could have."""

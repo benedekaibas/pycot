@@ -27,16 +27,11 @@ class LPPComplex:
     
     def experiment(self):
         """Do experiment for every single core and return the experiment"""
-        cores = self.cpu_cores()
-        pool_second_power = self.pool_second_power(10)
-        set_range = self.set_range()
-
-
         results = []
-        for core in cores:
+        for core in self.cpu_cores():
             start_time = timeit.default_timer()
             with Pool(core) as p:
-                result = p.map(pool_second_power, set_range)
+                result = p.map(self.pool_second_power(10), self.set_range())
                 results.append((core, result))
             end_time = timeit.default_timer()
             console.print(f"Execution time with {core} cores: {end_time - start_time} seconds.")

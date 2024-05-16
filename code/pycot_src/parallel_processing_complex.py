@@ -47,7 +47,7 @@ class LPPComplex:
                 right = median
             else:
                 left = median
-        return right > left and lst[left] == item
+        return right > left and lst[left] == item # this binary search does the search, but we need to refactor it
 
 
 if __name__ == "__main__":

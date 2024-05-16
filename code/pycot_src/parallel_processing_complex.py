@@ -21,7 +21,7 @@ class LPPComplex:
 
     def cpu_cores(self):
         """Returning all the cores that laptops could have."""
-        return [2,3,4,5,6,7,8]
+        return [2,3,4,5,6,7,8] # possible cores that a laptop has
     
     def pool_second_power(self, number: int) -> int:
         return number ** number

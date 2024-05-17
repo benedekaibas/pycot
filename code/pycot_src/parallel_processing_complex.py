@@ -38,8 +38,9 @@ class LPPComplex:
             console.print(f"Execution time with {core} cores: {end_time - start_time} seconds.")
         return results
     
-    def experiment_binary_search(self, lst = list, item = int, left = 0, right = None) -> list: 
+    def experiment_binary_search(self, item = int, left = 0, right = None) -> list: 
         """Doing the experiment with binary search, so we can get a better execution time."""
+        lst = self.cpu_cores()
         if right is None:
             right = len(lst)
         

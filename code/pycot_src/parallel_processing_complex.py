@@ -57,3 +57,4 @@ class LPPComplex:
 if __name__ == "__main__":
     lpp_complex =  LPPComplex()
     console.print(lpp_complex.experiment_for_loop())
+    console.print(lpp_complex.experiment_binary_search())

@@ -52,7 +52,6 @@ class LPPComplex:
         return right > left and lst[left] == item
 
 
-
 if __name__ == "__main__":
     lpp_complex =  LPPComplex()
     #console.print(lpp_complex.experiment_for_loop())

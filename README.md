@@ -35,3 +35,6 @@ Execution time: 0.014419317994907033 seconds
 ```
 
 #### 💻 Explaining the result of the experiment
+
+The result explains why it is a better choice to use oop method for programming in python in terms of execution time. For complex tasks it is definitely better to use oop rather than just do scripting without ordering them into functions and classes. Since in the factory the tasks are complex and programmers have to work with either large data set or complex code it is beneficial to use oop. This experiment is to show the execution time difference between the two approaches.
+
